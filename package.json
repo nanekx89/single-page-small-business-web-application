@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/reza-azimifar/one-page-business-website/issues"
   },
-  "homepage": "https://github.com/reza-azimifar/one-page-business-website#readme"
+  "homepage": "https://github.com/reza-azimifar/one-page-business-website#readme",
+  "devDependencies": {
+    "sass": "^1.75.0"
+  }
 }
