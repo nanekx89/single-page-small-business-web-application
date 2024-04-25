@@ -1,0 +1,19 @@
+{
+  "name": "one-page-business-website",
+  "version": "1.0.0",
+  "description": "responsive one-page website designed for businesses looking to establish a strong online presence with minimal complexity",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reza-azimifar/one-page-business-website.git"
+  },
+  "author": "Reza Azimifar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/reza-azimifar/one-page-business-website/issues"
+  },
+  "homepage": "https://github.com/reza-azimifar/one-page-business-website#readme"
+}
