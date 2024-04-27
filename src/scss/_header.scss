@@ -4,6 +4,7 @@
     background: var(--body-color);
     top: 0;
     left: 0;
+    padding: 0.75rem 0;
 }
 
 .nav {
@@ -11,10 +12,20 @@
     justify-content: space-between;
     align-items: center;
 
+    &__logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    &__toggle {
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
     &__menu {
         @media screen and (max-width: 767px) {
             position: fixed;
-            top: 4rem;
+            top:-100%;
             left: 0;
             right: 0;
             background: var(--container-color);
@@ -27,7 +38,13 @@
             -moz-border-radius: 2rem;
             -ms-border-radius: 2rem;
             -o-border-radius: 2rem;
-        }
+            transition: 0.5s;
+            -webkit-transition: 0.5s;
+            -moz-transition: 0.5s;
+            -ms-transition: 0.5s;
+            -o-transition: 0.5s;
+            z-index: -1;
+}
     }
 
     &__list {
@@ -37,4 +54,12 @@
         flex-direction: column;
         gap: 1.5rem;
     }
+
+    &__link, &__logo, &__toggle {
+        color: var(--title-color);
+    }
+}
+
+.show-menu {
+    top: 4rem;
 }

@@ -18,5 +18,8 @@
   "homepage": "https://github.com/reza-azimifar/one-page-business-website#readme",
   "devDependencies": {
     "sass": "^1.75.0"
+  },
+  "dependencies": {
+    "jquery": "^3.7.1"
   }
 }

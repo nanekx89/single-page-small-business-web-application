@@ -136,6 +136,7 @@ h4 {
   background: var(--body-color);
   top: 0;
   left: 0;
+  padding: 0.75rem 0;
 }
 
 .nav {
@@ -143,10 +144,18 @@ h4 {
   justify-content: space-between;
   align-items: center;
 }
+.nav__logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.nav__toggle {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
 @media screen and (max-width: 767px) {
   .nav__menu {
     position: fixed;
-    top: 4rem;
+    top: -100%;
     left: 0;
     right: 0;
     background: var(--container-color);
@@ -159,6 +168,12 @@ h4 {
     -moz-border-radius: 2rem;
     -ms-border-radius: 2rem;
     -o-border-radius: 2rem;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    z-index: -1;
   }
 }
 .nav__list {
@@ -167,6 +182,13 @@ h4 {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+}
+.nav__link, .nav__logo, .nav__toggle {
+  color: var(--title-color);
+}
+
+.show-menu {
+  top: 4rem;
 }
 
 @media screen and (min-width: 800px) {
