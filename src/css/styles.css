@@ -118,6 +118,57 @@ h4 {
   font-size: 0.875rem;
 }
 
+.container {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.button__header {
+  display: none;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  background: var(--body-color);
+  top: 0;
+  left: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .nav__menu {
+    position: fixed;
+    top: 4rem;
+    left: 0;
+    right: 0;
+    background: var(--container-color);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    margin: 0 auto;
+    padding: 2.5rem 0;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+  }
+}
+.nav__list {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
 @media screen and (min-width: 800px) {
   h1 {
     font-size: 3rem;
