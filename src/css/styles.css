@@ -126,11 +126,20 @@ h4 {
   gap: 1.5rem;
 }
 
+.section {
+  padding: 4rem 0 1rem 0;
+}
+
+.svg__img {
+  width: 400px;
+  justify-self: center;
+}
+
 .button {
   display: inline-block;
   background: var(--primary-color);
   color: #fff;
-  padding: 0.75rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   border-radius: 3rem;
   -webkit-border-radius: 3rem;
   -moz-border-radius: 3rem;
@@ -212,6 +221,24 @@ h4 {
   top: 4rem;
 }
 
+.home {
+  padding-top: 5rem;
+}
+.home__container {
+  row-gap: 2.5rem;
+}
+.home__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.home__title span {
+  color: var(--primary-color);
+}
+.home__description {
+  margin-bottom: 2rem;
+}
+
 @media screen and (min-width: 767px) {
   .nav__list {
     flex-direction: row;
@@ -241,7 +268,7 @@ h4 {
   }
   .button__header {
     display: block;
-    padding: 0.5rem 1.5rem;
+    padding: 0.3rem 1.5rem;
   }
 }
 

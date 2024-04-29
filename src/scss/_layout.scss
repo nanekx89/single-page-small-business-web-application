@@ -5,3 +5,14 @@
     display: grid;
     gap: 1.5rem;
 }
+
+.section {
+    padding: 4rem 0 1rem 0;
+}
+
+.svg {
+    &__img {
+        width: 400px;
+        justify-self: center;
+    }
+}
