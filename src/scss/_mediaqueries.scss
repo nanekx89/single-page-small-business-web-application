@@ -1,5 +1,5 @@
 @media screen and (min-width: 576px) {
-    .home__container, .about__container {
+    .home__container, .about__container, .support__container {
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
     }
@@ -16,7 +16,15 @@
         order: -1;
     }
 
+    .support__img {
+        order: 1;
+    }
+
     .about__info {
+        text-align: left;
+    }
+
+    .support__info {
         text-align: left;
     }
 
