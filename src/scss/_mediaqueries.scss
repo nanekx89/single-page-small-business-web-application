@@ -1,5 +1,5 @@
 @media screen and (min-width: 576px) {
-    .home__container, .about__container, .support__container, .services__container {
+    .home__container, .about__container, .support__container, .services__container, .app__container {
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
     }
@@ -8,28 +8,24 @@
         padding-top: 6rem;
     }
 
-    .home__img {
+    .home__img, .support__img {
         order: 1;
     }
 
-    .about__img {
+    .about__img, .app__img {
         order: -1;
     }
 
-    .support__img {
-        order: 1;
-    }
-
-    .about__info {
-        text-align: left;
-    }
-
-    .support__info {
+    .about__info, .support__info, .app__info {
         text-align: left;
     }
 
     .svg__img {
         width: 100%;
+    }
+
+    .app__buttons {
+        justify-content: left;
     }
 }
 
@@ -75,7 +71,7 @@
         padding: 0.3rem 1.5rem ;
     }
 
-    .home__container, .about__container, .support__container {
+    .home__container, .about__container, .support__container, .app__container {
         column-gap: 6rem;
     }
 
