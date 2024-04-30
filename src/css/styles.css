@@ -129,13 +129,16 @@ h4 {
 .section {
   padding: 4rem 0 1rem 0;
 }
-.section__title {
+.section__title, .section__title-center {
   font-size: 1.25rem;
   color: var(--title-color);
   margin-bottom: 1rem;
 }
-.section__title span {
+.section__title span, .section__title-center span {
   color: var(--primary-color);
+}
+.section__title-center {
+  text-align: center;
 }
 
 .svg__img {
@@ -166,6 +169,15 @@ h4 {
 }
 .button__header {
   display: none;
+}
+.button-link {
+  background: var(--container-color);
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+.button-link:hover {
+  background: var(--primary-color);
+  color: var(--container-color);
 }
 
 .header {
@@ -277,8 +289,30 @@ h4 {
   gap: 2rem;
 }
 
+.services__container {
+  margin-top: 2rem;
+  padding-top: 1rem;
+}
+.services__info {
+  display: grid;
+  row-gap: 1rem;
+  background: var(--container-color);
+  text-align: center;
+  box-shadow: 0px 2px 6px hsla(var(--hue), 100%, 15%, 0.15);
+  padding: 2rem 1.5rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+.services__icon {
+  font-size: 3rem;
+  color: var(--primary-color);
+}
+
 @media screen and (min-width: 576px) {
-  .home__container, .about__container, .support__container {
+  .home__container, .about__container, .support__container, .services__container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
@@ -337,6 +371,12 @@ h4 {
   .button__header {
     display: block;
     padding: 0.3rem 1.5rem;
+  }
+  .home__container, .about__container, .support__container {
+    column-gap: 6rem;
+  }
+  .services__container {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 

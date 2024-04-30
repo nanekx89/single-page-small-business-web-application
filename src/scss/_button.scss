@@ -23,4 +23,15 @@
     &__header{
         display: none;
     }
+
+    &-link {
+        background: var(--container-color);
+        border: 1px solid var(--primary-color);
+        color: var(--primary-color);
+        
+        &:hover {
+            background: var(--primary-color);
+            color: var(--container-color);
+        }
+    }
 }
