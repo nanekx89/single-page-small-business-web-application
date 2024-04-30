@@ -1,5 +1,5 @@
 @media screen and (min-width: 576px) {
-    .home__container {
+    .home__container, .about__container {
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
     }
@@ -10,6 +10,14 @@
 
     .home__img {
         order: 1;
+    }
+
+    .about__img {
+        order: -1;
+    }
+
+    .about__info {
+        text-align: left;
     }
 
     .svg__img {
