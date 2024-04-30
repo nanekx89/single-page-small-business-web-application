@@ -239,6 +239,21 @@ h4 {
   margin-bottom: 2rem;
 }
 
+@media screen and (min-width: 576px) {
+  .home__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+  .home {
+    padding-top: 6rem;
+  }
+  .home__img {
+    order: 1;
+  }
+  .svg__img {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 767px) {
   .nav__list {
     flex-direction: row;
@@ -265,6 +280,9 @@ h4 {
 @media screen and (min-width: 992px) {
   .container {
     width: 95vw;
+  }
+  .svg__img {
+    width: 500px;
   }
   .button__header {
     display: block;
