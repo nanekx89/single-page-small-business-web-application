@@ -1,3 +1,4 @@
+@import "../css/bootstrap-icons.css";
 @font-face {
   font-family: "Source-Sans-3";
   font-style: normal;
@@ -59,6 +60,31 @@
   --body-color: hsl(var(--hue), 0%, 100%);
   --container-color: #fff;
   --ff-primary: "Source-Sans-3", sans-serif;
+}
+
+body.dark-theme {
+  --primary-color-light: hsl(var(--hue), var(--sat), 75%);
+  --title-color: hsl(var(--hue), 4%, 95%);
+  --text-color: hsl(var(--hue), 4%, 80%);
+  --body-color: hsl(var(--hue), 8%, 13%);
+  --container-color: hsl(var(--hue), 8%, 16%);
+}
+
+.change-theme {
+  position: absolute;
+  right: 1.5rem;
+  top: 2.1rem;
+  color: var(--text-color);
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+.dark-theme .footer {
+  background-color: var(--container-color);
+}
+
+.dark-theme .wave path {
+  fill: var(--container-color);
 }
 
 * {
@@ -495,6 +521,9 @@ h4 {
   }
   .nav__toggle {
     display: none;
+  }
+  .change-theme {
+    position: unset;
   }
 }
 @media screen and (min-width: 800px) {

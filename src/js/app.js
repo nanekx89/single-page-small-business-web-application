@@ -1,5 +1,3 @@
-// import $ from "jquery";
-
 $("#nav-toggle").on("click", function () {
     $("#nav-menu").toggleClass("show-menu");
 });
@@ -34,4 +32,20 @@ $(".nav__link").each(function (i) {
     $(".nav__link").on("click", function () {
         $("#nav-menu").removeClass("show-menu");
     });
+});
+
+$("#theme-button").on("click", function () {
+    if ($("body").hasClass("dark-theme")){
+        $("body").removeClass("dark-theme");
+        if ($(this).hasClass("bi-toggle-on")){
+            $(this).removeClass("bi-toggle-on");
+            $(this).addClass("bi-toggle-off");
+        }
+    } else {
+        $("body").addClass("dark-theme");
+        if ($(this).hasClass("bi-toggle-off")){
+            $(this).removeClass("bi-toggle-off");
+            $(this).addClass("bi-toggle-on");
+        }
+    }
 });
