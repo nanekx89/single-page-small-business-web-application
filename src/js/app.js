@@ -1,3 +1,5 @@
+// Fork this repository for free:  https://github.com/reza-azimifar
+
 $("#nav-toggle").on("click", function () {
     $("#nav-menu").toggleClass("show-menu");
 });
