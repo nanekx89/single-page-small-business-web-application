@@ -9,6 +9,10 @@
         align-items: center;
     }
 
+    .footer__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .home {
         padding-top: 6rem;
     }
@@ -94,5 +98,27 @@
 
     .contact__container {
         grid-template-columns: 3fr 1.5fr 1.25fr;
+    }
+
+    .wave {
+        display: block;
+    }
+
+    .footer {
+        &__container {
+            grid-template-columns: repeat(5, 1fr);
+        }
+
+        &__social {
+            &-link {
+                font-size: 1.7rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1577px) {
+    .wave {
+        margin: 0;
     }
 }

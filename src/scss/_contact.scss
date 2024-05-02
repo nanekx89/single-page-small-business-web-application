@@ -3,6 +3,10 @@
         padding-bottom: 3rem;
     }
 
+    &__title {
+        color: var(--primary-color);
+    }
+
     &__description {
         text-align: left;
     }
