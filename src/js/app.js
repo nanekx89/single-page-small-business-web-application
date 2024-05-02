@@ -22,6 +22,12 @@ $(window).on("scroll", function () {
             $(`.nav__menu a[href*= ${sectionId}]`).removeClass("active-link");
         }
     });
+
+    if (this.scrollY >= 560) {
+        $("#scroll-up").addClass("show-scroll");
+    } else {
+        $("#scroll-up").removeClass("show-scroll");
+    }
 });
 
 $(".nav__link").each(function (i) {

@@ -421,6 +421,37 @@ h4 {
   color: var(--title-color);
 }
 
+.scrollup {
+  position: fixed;
+  background: var(--primary-color);
+  right: 2rem;
+  bottom: -20%;
+  z-index: 100;
+  padding: 0.5rem 0.5rem 0.3rem 0.5rem;
+  border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  opacity: 0.8;
+}
+.scrollup:hover {
+  opacity: 1;
+}
+.scrollup__icon {
+  font-size: 1.25rem;
+  color: var(--container-color);
+}
+
+.show-scroll {
+  bottom: 3rem;
+}
+
 @media screen and (min-width: 576px) {
   .home__container,
   .about__container,
