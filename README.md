@@ -8,7 +8,7 @@ Fork [this repository](https://github.com/reza-azimifar/single-page-small-busine
 
 
 ## Demo 
-Here you can check the [Demo](https://www.rezaexplains.com/) online:
+Here you can check the [Demo](https://reza-azimifar.github.io/single-page-small-business-web-application/) online:
 
 ![Demo Image](./src/images/demo.png)
 
@@ -28,7 +28,9 @@ It would be best if you replaced the default values of the navigation bar and de
 
 Also, it is better to replace the titles of the buttons with the values you need and adjust the links of the buttons to the relevant sections based on your needs.
 
-At the end, set the link of your social pages and adjust the icons, titles, and links in the footer section according to your needs.
+Set the link of your social pages and adjust the icons, titles, and links in the footer section according to your needs.
+
+In the end, by executing the `npm run build` in the command line create the final production version in the `dist` folder and only upload the `dist` folder on your host
 
 
 ## Files
