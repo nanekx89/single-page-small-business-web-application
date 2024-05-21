@@ -7,7 +7,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Your Business Name</title>
-        <link rel="stylesheet" href="./src/css/styles.css">
+
+        <!-- Remove these two lines below on the final edition, when you are going to upload the project online, and then run 'npm run build' in the terminal to create the final production version in the dist folder -->
+        <script defer src="dist/js/app.js"></script>
+        <link href="dist/js/../css/styles.css" rel="stylesheet">
+        <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
     </head>
 
     <body>
@@ -46,9 +50,7 @@
 
         <section class="home section" id="home">
             <div class="home__container container">
-                <article class="svg__img home__img">
-                    <img src="./src/images/1.svg" alt="home-image">
-                </article>
+                <article class="svg__img home__img" id="img1"></article>
 
                 <article class="home__info">
                     <h1 class="home__title">
@@ -75,9 +77,7 @@
                     </p>
                 </article>
 
-                <article class="svg__img about__img">
-                    <img src="./src/images/2.svg" alt="about-image">
-                </article>
+                <article class="svg__img about__img" id="img2"></article>
             </div>
         </section>
 
@@ -93,9 +93,7 @@
                     </p>
                 </article>
 
-                <article class="svg__img support__img">
-                    <img src="./src/images/3.svg" alt="support-image">
-                </article>
+                <article class="svg__img support__img" id="img3"></article>
             </div>
         </section>
 
@@ -153,9 +151,7 @@
                     </div>
                 </article>
 
-                <article class="svg__img app__img">
-                    <img src="./src/images/4.svg" alt="app-image">
-                </article>
+                <article class="svg__img app__img" id="img4"></article>
             </div>
         </section>
 
@@ -258,8 +254,6 @@
         <a class="scrollup" id="scroll-up" href="#home">
             <i class="scrollup__icon bi bi-arrow-up"></i>
         </a>
-
-        <script src="./node_modules/jquery/dist/jquery.js"></script>
-        <script src="./src/js/app.js"></script>
     </body>
+
 </html>

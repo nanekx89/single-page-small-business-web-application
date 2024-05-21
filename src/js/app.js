@@ -1,5 +1,12 @@
 // Fork this repository for free:  https://github.com/reza-azimifar
 
+import $ from "jquery";
+import "../scss/styles.scss";
+import image1 from "../images/1.svg";
+import image2 from "../images/2.svg";
+import image3 from "../images/3.svg";
+import image4 from "../images/4.svg";
+
 $("#nav-toggle").on("click", function () {
     $("#nav-menu").toggleClass("show-menu");
 });
@@ -51,3 +58,12 @@ $("#theme-button").on("click", function () {
         }
     }
 });
+
+function imageLoader () {
+    $("#img1").append(`<img src=${image1} alt="home-image">`);
+    $("#img2").append(`<img src=${image2} alt="about-image">`);
+    $("#img3").append(`<img src=${image3} alt="support-image">`);
+    $("#img4").append(`<img src=${image4} alt="app-image">`);
+}
+
+imageLoader();
