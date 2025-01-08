@@ -1,41 +1,30 @@
 <!DOCTYPE html>
 
-<!-- Fork this repository for free:  https://github.com/reza-azimifar -->
-
 <html dir="ltr" lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Your Business Name</title>
+        <title>Domy Marzeń</title>
 
         <!-- Remove these two lines below on the final edition, when you are going to upload the project online, and then run 'npm run build' in the terminal to create the final production version in the dist folder -->
         <script defer src="dist/js/app.js"></script>
         <link href="dist/js/../css/styles.css" rel="stylesheet">
-        <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
     </head>
 
     <body>
         <header class="header" id="header">
             <nav class="nav container">
-                <a class="nav__logo" href="#">Business Name</a>
-
+                <a class="nav__logo" href="#">
+                    <img src="dist/images/logo.png" class="nav__logo-img">
+                    <span>Domy Marzeń</span>
+                </a>
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
-                        <li class="nav__item">
-                            <a class="nav__link" href="#home">Home</a>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__link" href="#about">About us</a>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__link" href="#support">Support</a>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__link" href="#services">Services</a>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__link" href="#contact">Contact us</a>
-                        </li>
+                        <li class="nav__item"><a class="nav__link" href="#home">Strona główna</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#about">O nas</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#support">Wsparcie</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#services">Usługi</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#contact">Kontakt</a></li>
                         <i class="change-theme bi bi-toggle-off" id="theme-button"></i>
                     </ul>
                 </div>
@@ -44,7 +33,7 @@
                     <i class="bi bi-list-nested"></i>
                 </div>
 
-                <a class="button button__header" href="#">Lorem, ipsum.</a>
+                <a class="button button__header" href="#">Do góry ⬆</a>
             </nav>
         </header>
 
@@ -54,13 +43,13 @@
 
                 <article class="home__info">
                     <h1 class="home__title">
-                        Lorem ipsum dolor sit. <br>
-                        <span>Home</span>
+                        Twoje wymarzone miejsce <br>
+                        <span>do życia</span>
                     </h1>
                     <p class="home__description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius eveniet doloremque non sit reiciendis magni illo nesciunt numquam.
+                        Tworzymy nowoczesne, funkcjonalne i przyjazne domy jednorodzinne. Odkryj nasze inwestycje i znajdź swój dom marzeń.
                     </p>
-                    <a href="#" class="button">Lorem, ipsum.</a>
+                    <a href="#" class="button">Poznaj szczegóły</a>
                 </article>
             </div>
         </section>
@@ -69,11 +58,11 @@
             <div class="about__container container">
                 <article class="about__info">
                     <h1 class="section__title">
-                        Lorem ipsum dolor sit. <br>
-                        <span>About us</span>
+                        Kim jesteśmy? <br>
+                        <span>O nas</span>
                     </h1>
                     <p class="about__description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius eveniet doloremque non sit reiciendis magni illo nesciunt numquam.
+                        Jesteśmy zespołem z wieloletnim doświadczeniem w budowie domów jednorodzinnych. Łączymy nowoczesność z funkcjonalnością, tworząc miejsca idealne dla Ciebie i Twojej rodziny.
                     </p>
                 </article>
 
@@ -85,11 +74,11 @@
             <div class="support__container container">
                 <article class="support__info">
                     <h1 class="section__title">
-                        Lorem ipsum dolor sit. <br>
-                        <span>Support</span>
+                        Zawsze przy Tobie <br>
+                        <span>Wsparcie</span>
                     </h1>
                     <p class="support__description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius eveniet doloremque non sit reiciendis magni illo nesciunt numquam.
+                        Oferujemy wsparcie na każdym etapie realizacji inwestycji – od projektu po odbiór kluczy. Naszym priorytetem jest Twoje zadowolenie.
                     </p>
                 </article>
 
@@ -99,68 +88,44 @@
 
         <section class="services section" id="services">
             <h1 class="section__title section__title-center">
-                Lorem ipsum dolor sit. <br>
-                <span>Services</span>
+                Co oferujemy? <br>
+                <span>Usługi</span>
             </h1>
 
             <div class="services__container container">
                 <article class="services__info">
-                    <h3 class="services__title">Lorem ipsum</h3>
-                    <i class="services__icon bi bi-browser-chrome"></i>
-                    <p class="services__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus iure neque sed sint, quo consequuntur omnis eius tenetur?</p>
+                    <h3 class="services__title">Budowa domów</h3>
+                    <i class="services__icon bi bi-house"></i>
+                    <p class="services__description">Od projektu po klucze – budujemy domy jednorodzinne dostosowane do Twoich potrzeb.</p>
                     <div>
-                        <a class="button button-link" href="#">see more</a>
+                        <a class="button button-link" href="#">Dowiedz się więcej</a>
                     </div>
                 </article>
                 <article class="services__info">
-                    <h3 class="services__title">Lorem ipsum</h3>
-                    <i class="services__icon bi bi-browser-edge"></i>
-                    <p class="services__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus iure neque sed sint, quo consequuntur omnis eius tenetur?</p>
+                    <h3 class="services__title">Wykończenie wnętrz</h3>
+                    <i class="services__icon bi bi-brush"></i>
+                    <p class="services__description">Zajmujemy się wykończeniem wnętrz, aby Twój dom był gotowy do zamieszkania.</p>
                     <div>
-                        <a class="button button-link" href="#">see more</a>
+                        <a class="button button-link" href="#">Dowiedz się więcej</a>
                     </div>
                 </article>
                 <article class="services__info">
-                    <h3 class="services__title">Lorem ipsum</h3>
-                    <i class="services__icon bi bi-browser-firefox"></i>
-                    <p class="services__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus iure neque sed sint, quo consequuntur omnis eius tenetur?</p>
+                    <h3 class="services__title">Doradztwo</h3>
+                    <i class="services__icon bi bi-chat-dots"></i>
+                    <p class="services__description">Pomagamy w podejmowaniu kluczowych decyzji na każdym etapie budowy.</p>
                     <div>
-                        <a class="button button-link" href="#">see more</a>
+                        <a class="button button-link" href="#">Dowiedz się więcej</a>
                     </div>
                 </article>
-            </div>
-        </section>
-
-        <section class="app section" id="app">
-            <div class="app__container container">
-                <article class="app__info">
-                    <h2 class="section__title">
-                        Lorem ipsum dolor sit amet <br>
-                        <span>Applications</span>
-                    </h2>
-                    <p class="app__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quasi ipsam ea perferendis nam eos corrupti, odio quis.</p>
-                    <div class="app__buttons">
-                        <a class="button button-flex" href="#">
-                            <i class="bi bi-apple"></i>
-                            App Store
-                        </a>
-                        <a class="button button-flex" href="#">
-                            <i class="bi bi-google-play"></i>
-                            Google Play
-                        </a>
-                    </div>
-                </article>
-
-                <article class="svg__img app__img" id="img4"></article>
             </div>
         </section>
 
         <section class="contact section" id="contact">
             <div class="contact__container container">
                 <div>
-                    <article">
-                        <h2 class="contact__title section__title">Contact</h2>
-                        <p class="contact__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus iure unde sed quasi ea a ipsam laudantium placeat.</p>
+                    <article>
+                        <h2 class="contact__title section__title">Kontakt</h2>
+                        <p class="contact__description">Masz pytania? Skontaktuj się z nami, a pomożemy Ci w realizacji Twojego wymarzonego domu.</p>
                     </article>
                 </div>
 
@@ -168,16 +133,16 @@
                     <article>
                         <ul class="contact__info">
                             <li class="contact__address">
-                                Phone:
-                                <span class="contact__information">+1 - 000 - 0000000</span>
+                                Telefon:
+                                <span class="contact__information">+48 123 456 789</span>
                             </li>
                             <li class="contact__address">
-                                Email:
-                                <span class="contact__information">example@email.com</span>
+                                E-mail:
+                                <span class="contact__information">kontakt@domymarzen.pl</span>
                             </li>
                             <li class="contact__address">
-                                Address:
-                                <span class="contact__information">Lorem ipsum dolor sit amet consectetur.</span>
+                                Adres:
+                                <span class="contact__information">Warszawa, ul. Przykładowa 1</span>
                             </li>
                         </ul>
                     </article>
@@ -186,50 +151,21 @@
                 <div>
                     <article>
                         <div class="contact__button">
-                            <a class="button button-contact" href="#">Contact us</a>
+                            <a class="button button-contact" href="#">Skontaktuj się z nami</a>
                         </div>
                     </article>
                 </div>
             </div>
         </section>
 
-        <section class="wave" id="wave">
-            <svg class="wave__svg" viewBox="0 0 1440 217" xmlns="http://www.w3.org/2000/svg"><path d="M 0,400 L 0,150 C 61.561538461538476,189.33076923076922 123.12307692307695,228.66153846153844 212,206 C 300.87692307692305,183.33846153846156 417.0692307692308,98.68461538461537 499,105 C 580.9307692307692,111.31538461538463 628.6,208.6 709,213 C 789.4,217.4 902.530769230769,128.91538461538462 997,93 C 1091.469230769231,57.08461538461538 1167.2769230769231,73.73846153846154 1238,92 C 1308.7230769230769,110.26153846153846 1374.3615384615384,130.13076923076923 1440,150 L 1440,400 L 0,400 Z"></path></svg>
-        </section>
-
         <footer class="footer section">
             <div class="footer__container container">
                 <article class="footer__content">
-                    <a href="#" class="footer__logo">Business Name</a>
-                    <p class="footer__description">Lorem ipsum dolor sit.</p>
-                </article>
-
-                <article class="footer__content">
-                    <h3 class="footer__title">Lorem ipsum</h3>
-                    <ul class="footer__links">
-                        <li><a href="#" class="footer__link">Lorem ipsum</a></li>
-                        <li><a href="#" class="footer__link">Lorem ipsum</a></li>
-                        <li><a href="#" class="footer__link">Lorem ipsum</a></li>
-                        <li><a href="#" class="footer__link">Lorem ipsum</a></li>
-                    </ul>
-                </article>
-
-                <article class="footer__content">
-                    <h3 class="footer__title">Lorem ipsum</h3>
-                    <ul class="footer__links">
-                        <li><a href="#" class="footer__link">Lorem ipsum</a></li>
-                        <li><a href="#" class="footer__link">Lorem ipsum</a></li>
-                        <li><a href="#" class="footer__link">Lorem ipsum</a></li>
-                    </ul>
-                </article>
-
-                <article class="footer__content">
-                    <h3 class="footer__title">Lorem ipsum</h3>
-                    <ul class="footer__links">
-                        <li><a href="#" class="footer__link">Lorem ipsum</a></li>
-                        <li><a href="#" class="footer__link">Lorem ipsum</a></li>
-                        <li><a href="#" class="footer__link">Lorem ipsum</a></li>
-                    </ul>
+                    <a href="#" class="footer__logo">
+                        <img src="dist/images/logo.png" alt="Domy Marzeń logo" class="nav__logo-img">
+                        Domy Marzeń
+                    </a>
+                    <p class="footer__description">Tworzymy miejsca, które pokochasz.</p>
                 </article>
 
                 <article class="footer__social">
@@ -240,20 +176,19 @@
                         <i class="bi bi-instagram"></i>
                     </a>
                     <a href="#" class="footer__social-link">
-                        <i class="bi bi-twitter"></i>
+                        <i class="bi bi-facebook"></i>
                     </a>
                     <a href="#" class="footer__social-link">
-                        <i class="bi bi-whatsapp"></i>
+                        <i class="bi bi-twitter"></i>
                     </a>
                 </article>
             </div>
 
-            <p class="footer__copy">&#169; All Right Reserved.</p>
+            <p class="footer__copy">&#169; 2025 Domy Marzeń. Wszystkie prawa zastrzeżone.</p>
         </footer>
 
         <a class="scrollup" id="scroll-up" href="#home">
             <i class="scrollup__icon bi bi-arrow-up"></i>
         </a>
     </body>
-
 </html>
